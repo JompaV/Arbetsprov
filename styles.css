@@ -1,0 +1,153 @@
+.hidden {
+	display: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(#002650, #33519B);
+	font-family: arial;
+	margin-top: -20px;
+}
+
+.main-container {
+	margin: 20px auto;
+	width: 100%;
+	max-width: 500px;
+}
+
+header {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.search-section {
+	padding: 0 10px;
+}
+
+.search-container {
+	padding: 10px 40px;
+	border-radius: 5px;
+	background-color: #B3BECA;
+	max-width: 320px;
+	margin: 10px auto;
+	position: relative;
+	background-image: url('UI/assets/search.svg');
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+	background-size: 25px 25px;
+	margin-bottom: 30px;
+}
+.search {
+	border: none;
+	color: #fff;
+	background: none;
+	font-size: 1.2em;
+	width: 100%;
+}
+
+.results {
+	position: absolute;
+	top: 57px;
+	background: #fff;
+	left: 0;
+	right: 0;
+	border-radius: 5px;
+}
+.results ul li {
+	border-bottom: 1px #333 solid;
+	padding: 5px;
+}
+
+.results .selected {
+	background-color: #333;
+	color: #fff;
+}
+
+.results ul li:last-child {
+	border-bottom: none;
+}
+.results ul li:hover {
+	background-color: #666;
+	color: #fff;
+	cursor: pointer;
+}
+
+.save-list-container {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.save-list {
+	overflow: hidden;
+}
+
+.save-list li:first-child {
+	margin-top: 20px;
+}
+
+.save-list li:last-child {
+	margin-bottom: 20px;
+}
+
+.save-list li div {
+	display: inline-block;
+	color: #fff;
+}
+
+.save-list .save-list-item {
+	display: flex;
+	padding: 15px 10px;
+}
+
+.save-list .save-list-item:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.save-list .name-date {
+	width: calc(100% - 25px);
+}
+
+.save-list .name {
+	width: calc(100% - 178px);
+	padding-right: 15px;
+	font-size: 1.2em;
+}
+
+.save-list .date {
+	display: inline-flex;
+	vertical-align: middle;
+	height: 100%;
+	font-size: 1.1em;
+}
+
+.save-list .remove {
+    width: 54px;
+	cursor: pointer;
+	background-color:  rgba(255, 0, 0, 0.3);
+	float: right;
+	display: inline-flex;
+	margin-right: -10px;
+    visibility: hidden;
+	margin-top: -15px;
+	margin-bottom: -15px;
+	background-image: url('UI/assets/delete.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 25px 25px;
+}
+
+.save-list .save-list-item:hover .remove {
+	visibility: visible;
+}
